@@ -43,7 +43,13 @@
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        frameborder: '0',
+        playerVars: {
+          autoplay: '1',
+          controls: '0',
+          rel: '0',
+          showinfo: '0',
+          modestbranding: '1'
+        },
         height: '480',
         width: '800',
         videoId: 'VOIqYt14GHQ',
