@@ -48,6 +48,7 @@ body {
 	font-family: montserrat;
 	font-size: 4em;
 	color: white;
+	text-align: center;
 }
 
 a {
@@ -86,4 +87,22 @@ a {
 
 .spotifyLink:hover {
 	background-color: #00B349;
+}
+
+@media only screen and (max-width: 450px) {
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	.button {
+		width: 85%;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.question {
+		font-size: 5em;
+		text-align: center;
+	}
 }
